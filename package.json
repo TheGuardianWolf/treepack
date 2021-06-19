@@ -1,9 +1,19 @@
 {
   "name": "@theguardianwolf/treepack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pack tree nodes into a flat object and unpack them again!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "serialization",
+    "serialize",
+    "deserialize",
+    "tree",
+    "pack",
+    "slate",
+    "change-detection",
+    "treepack"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
