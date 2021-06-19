@@ -1,6 +1,6 @@
 {
   "name": "@theguardianwolf/treepack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pack tree nodes into a flat object and unpack them again!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,8 +16,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "publish": "tsc --build --clean && tsc"
+    "build": "tsc"
   },
   "author": "TheGuardianWolf",
   "repository": {
