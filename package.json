@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "publish": "tsc --build --clean && tsc"
+    "publish": "tsc --build --clean && tsc && npm publish"
   },
   "author": "TheGuardianWolf",
   "repository": {
