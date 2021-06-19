@@ -10,6 +10,10 @@
     "publish": "tsc --build --clean && tsc"
   },
   "author": "TheGuardianWolf",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheGuardianWolf/treepack.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.23",
