@@ -10,6 +10,7 @@ This package provides a `TreePack` class to convert hierarchical, tree-like stru
 
 - It is assumed that you have children of each node in a single array object
 - Self referencing objects at any point in the tree are not supported
+- Changing the index of an object causes a lot of adding and deleting. This is a limitation of the path based scheme. I will fix this in V2 somehow but I may need to start adding constraints.
 
 ## Usage
 
