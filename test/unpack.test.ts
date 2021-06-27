@@ -121,6 +121,21 @@ describe('Unpacking trees from id object and path object', () => {
 describe('unpack errors', () => {
   it('rejects trees without ids in nodes', () => {
     const opts = { childrenKey: 'children', idKey: 'id' }
+    expect(() =>
+      TreePack.unpack(
+        {
+          '0': '_SAt1xvfofwvnxGv2jFh'
+        },
+        {},
+        opts
+      )
+    ).toThrowError(
+      'Node with id _SAt1xvfofwvnxGv2jFh was not found, please check if the data is valid'
+    )
+  })
+
+  it('rejects trees without node data', () => {
+    const opts = { childrenKey: 'children', idKey: 'id' }
     expect(() => TreePack.unpack({}, null, opts)).toThrowError(
       'An idKey was provided but the tree data was not provided as second argument'
     )

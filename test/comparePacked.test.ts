@@ -386,3 +386,17 @@ describe('Compare packed id objects', () => {
     } as PackedTreeCompareResult)
   })
 })
+
+describe('compare packed errors', () => {
+  it('rejects without arguments', () => {
+    const expected = {
+      addedKeys: [],
+      changedKeys: [],
+      removedKeys: []
+    }
+
+    expect(TreePack.comparePacked(undefined as any, undefined as any)).toEqual(
+      expected
+    )
+  })
+})

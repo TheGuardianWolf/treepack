@@ -27,7 +27,10 @@ export const TREE_PATH_SEPERATOR = '-'
 export const TREE_LEAF_TERMINATOR = '|'
 
 class TreePack {
-  static pack = (tree: GenericTree, opts: TreePackOptions) => {
+  static pack = (
+    tree: GenericTree,
+    opts: TreePackOptions
+  ): [PackedTree | PackedPathTree, PackedTree | null, TreePackOptions] => {
     if (!opts.childrenKey) {
       throw 'childrenKey has not been provided'
     }
@@ -57,7 +60,7 @@ class TreePack {
   static convertPackedPathIdTree = (
     packedPathIdTree: PackedTree,
     idKey: string
-  ) => {
+  ): [PackedPathTree, PackedTree] => {
     const [packedPathTree, packedObjectTree] = Object.entries(
       packedPathIdTree
     ).reduce(
@@ -105,7 +108,7 @@ class TreePack {
 
   static unpack = (
     packedPathTree: PackedPathTree | PackedTree,
-    packedTree: PackedTree | null = null,
+    packedTree: PackedTree | null,
     opts: TreePackOptions
   ) => {
     if (!opts.idKey) {
@@ -242,18 +245,16 @@ class TreePack {
     )
 
     while (queue.length) {
-      const item = queue.shift()
+      const item = queue.shift()!
 
-      if (item) {
-        const [curr, path] = item
-        callbackFn(...item)
+      const [curr, path] = item
+      callbackFn(...item)
 
-        const children = curr[childrenKey] as GenericArrayTree | undefined
+      const children = curr[childrenKey] as GenericArrayTree | undefined
 
-        children?.forEach((child, i, arr) => {
-          queue.push([child, path.concat(i), arr])
-        })
-      }
+      children?.forEach((child, i, arr) => {
+        queue.push([child, path.concat(i), arr])
+      })
     }
   }
 }
