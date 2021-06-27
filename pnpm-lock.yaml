@@ -2,12 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/jest': ^26.0.23
-  '@types/lodash.difference': ^4.5.6
-  '@types/lodash.intersection': ^4.4.6
-  '@types/lodash.isequal': ^4.5.5
-  '@types/lodash.isobject': ^3.0.6
-  '@types/lodash.omit': ^4.5.6
-  '@types/lodash.set': ^4.3.6
+  '@types/lodash': ^4.14.170
   '@typescript-eslint/eslint-plugin': ^4.27.0
   '@typescript-eslint/parser': ^4.27.0
   eslint: ^7.29.0
@@ -21,12 +16,7 @@ specifiers:
   import-sort-parser-typescript: ^6.0.0
   import-sort-style-module: ^6.0.0
   jest: ^27.0.4
-  lodash.difference: ^4.5.0
-  lodash.intersection: ^4.4.0
-  lodash.isequal: ^4.5.0
-  lodash.isobject: ^3.0.2
-  lodash.omit: ^4.5.0
-  lodash.set: ^4.3.2
+  lodash: ^4.17.21
   prettier: ^2.3.1
   prettier-config-standard: ^4.0.0
   prettier-plugin-import-sort: ^0.0.7
@@ -34,21 +24,11 @@ specifiers:
   typescript: ^4.3.4
 
 dependencies:
-  '@types/lodash.difference': 4.5.6
-  '@types/lodash.intersection': 4.4.6
-  '@types/lodash.isequal': 4.5.5
-  '@types/lodash.isobject': 3.0.6
-  '@types/lodash.omit': 4.5.6
-  '@types/lodash.set': 4.3.6
-  lodash.difference: 4.5.0
-  lodash.intersection: 4.4.0
-  lodash.isequal: 4.5.0
-  lodash.isobject: 3.0.2
-  lodash.omit: 4.5.0
-  lodash.set: 4.3.2
+  lodash: 4.17.21
 
 devDependencies:
   '@types/jest': 26.0.23
+  '@types/lodash': 4.14.170
   '@typescript-eslint/eslint-plugin': 4.27.0_b7b1357bbf6753e7455d6ef3191d413d
   '@typescript-eslint/parser': 4.27.0_eslint@7.29.0+typescript@4.3.4
   eslint: 7.29.0
@@ -756,45 +736,9 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/lodash.difference/4.5.6:
-    resolution: {integrity: sha512-wXH53r+uoUCrKhmh7S5Gf6zo3vpsx/zH2R4pvkmDlmopmMTCROAUXDpPMXATGCWkCjE6ik3VZzZUxBgMjZho9Q==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
-  /@types/lodash.intersection/4.4.6:
-    resolution: {integrity: sha512-6ewsKax7+HgT+7mEhzXT6tIyIHc/mjCwZJnarvLbCrtW21qmDQHWbaJj4Ht4DQDBmMdnvZe8APuVlsMpZ5E5mQ==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
-  /@types/lodash.isequal/4.5.5:
-    resolution: {integrity: sha512-4IKbinG7MGP131wRfceK6W4E/Qt3qssEFLF30LnJbjYiSfHGGRU/Io8YxXrZX109ir+iDETC8hw8QsDijukUVg==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
-  /@types/lodash.isobject/3.0.6:
-    resolution: {integrity: sha512-2lwGbaIXMR5hjO56nCvI7W6bmY3Y3uJvbHWqO9MtOE1StyhZ1VtLINQ0MLC87rrB3zHHp+u4DHeal70rx1kvjw==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
-  /@types/lodash.omit/4.5.6:
-    resolution: {integrity: sha512-KXPpOSNX2h0DAG2w7ajpk7TXvWF28ZHs5nJhOJyP0BQHkehgr948RVsToItMme6oi0XJkp19CbuNXkIX8FiBlQ==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
-  /@types/lodash.set/4.3.6:
-    resolution: {integrity: sha512-ZeGDDlnRYTvS31Laij0RsSaguIUSBTYIlJFKL3vm3T2OAZAQj2YpSvVWJc0WiG4jqg9fGX6PAPGvDqBcHfSgFg==}
-    dependencies:
-      '@types/lodash': 4.14.170
-    dev: false
-
   /@types/lodash/4.14.170:
     resolution: {integrity: sha512-bpcvu/MKHHeYX+qeEN8GE7DIravODWdACVA1ctevD8CN24RhPZIKMn9ntfAsrvLfSX3cR5RrBKAbYm9bGs0A+Q==}
-    dev: false
+    dev: true
 
   /@types/node/15.12.4:
     resolution: {integrity: sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==}
@@ -3030,33 +2974,9 @@ packages:
     resolution: {integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=}
     dev: true
 
-  /lodash.difference/4.5.0:
-    resolution: {integrity: sha1-nMtOUF1Ia5FlE0V3KIWi3yf9AXw=}
-    dev: false
-
-  /lodash.intersection/4.4.0:
-    resolution: {integrity: sha1-ChG6Yx0OlcI8fy9Mu5ppLtF45wU=}
-    dev: false
-
-  /lodash.isequal/4.5.0:
-    resolution: {integrity: sha1-QVxEePK8wwEgwizhDtMib30+GOA=}
-    dev: false
-
-  /lodash.isobject/3.0.2:
-    resolution: {integrity: sha1-PI+41bW/S/kK4G4U8qUwpO2TXh0=}
-    dev: false
-
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
-
-  /lodash.omit/4.5.0:
-    resolution: {integrity: sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=}
-    dev: false
-
-  /lodash.set/4.3.2:
-    resolution: {integrity: sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=}
-    dev: false
 
   /lodash.truncate/4.4.2:
     resolution: {integrity: sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=}
@@ -3064,7 +2984,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
