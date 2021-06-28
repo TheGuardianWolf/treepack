@@ -1,7 +1,7 @@
 import difference from 'lodash/difference'
 import intersection from 'lodash/intersection'
-import isEqual from 'lodash/isequal'
-import isObject from 'lodash/isobject'
+import isEqual from 'lodash/isEqual'
+import isObject from 'lodash/isObject'
 import omit from 'lodash/omit'
 import set from 'lodash/set'
 

@@ -1,6 +1,6 @@
 {
   "name": "@theguardianwolf/treepack",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Pack tree nodes into a flat object and unpack them again!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
