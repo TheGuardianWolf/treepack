@@ -198,10 +198,10 @@ class TreePack {
   }
 
   static comparePacked = (
-    originalPackedTree: PackedTree,
-    newPackedTree: PackedTree
+    originalObject: Record<string, unknown>,
+    newObject: Record<string, unknown>
   ): PackedTreeCompareResult => {
-    if (!originalPackedTree || !newPackedTree) {
+    if (!originalObject || !newObject) {
       return {
         addedKeys: [],
         changedKeys: [],
@@ -209,15 +209,15 @@ class TreePack {
       }
     }
 
-    const originalKeys = Object.keys(originalPackedTree)
-    const newKeys = Object.keys(newPackedTree)
+    const originalKeys = Object.keys(originalObject)
+    const newKeys = Object.keys(newObject)
     const addedKeys = difference(newKeys, originalKeys)
     const removedKeys = difference(originalKeys, newKeys)
     const sameKeys = intersection(originalKeys, newKeys)
 
     const changedKeys = sameKeys.filter((key) => {
-      const a = originalPackedTree[key]
-      const b = newPackedTree[key]
+      const a = originalObject[key]
+      const b = newObject[key]
 
       return !isEqual(a, b)
     })
@@ -257,6 +257,8 @@ class TreePack {
       })
     }
   }
+
+  static compare = TreePack.comparePacked
 }
 
 export default TreePack
